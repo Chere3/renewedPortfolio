@@ -1,26 +1,56 @@
+import Image from "next/image";
 
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
-  title: 'Portfolio | Aún en construcción',
-  description: 'Chere3',
-}
+  title: "Portfolio | Aún en construcción",
+  description: "Chere3",
+};
 
 export default function Home() {
   return (
-    <div className='bg-[#f6fafd]
-    '>
-      <div className="container mx-auto">
-        <div className="flex flex-col items-center justify-center min-h-screen py-2">
-          <h1 className="text-6xl font-bold text-[#33393e]">Este sitio web esta en <span className='text-[#f6fafd] bg-[#33393e] rounded p-1'>construcción</span>, de mientras puedes ver mi github para conocer más de mí:</h1>
-          <div className="flex items-center justify-center py-16">
-            <a href="https://github.com/chere3" target="_blank" rel="noopener noreferrer" className='text-2xl border-2 border-[#33393e] rounded-full p-1 px-6 hover:bg-[#33393e] hover:text-white transition duration-500 ease-in-out font-medium mx-3' title='github'>Github</a>
-            <a href="https://github.com/chere3/renewedPortfolio" target="_blank" rel="noopener noreferrer" className='text-2xl border-2 border-[#33393e] rounded-full p-1 px-6 hover:bg-[#33393e] hover:text-white transition duration-500 ease-in-out font-medium mx-3
-            ' title='code_github'>Ver código en github</a>  
-            </div>
+    <div>
+      <header>
+        <div>
+          <Image src="/website/logo.png" alt="logo" width={100} height={100} />
+          <span>
+            <ul>
+              <li>
+                <a href="#">Inicio</a>
+              </li>
+              <li>
+                <a href="#">Acerca de mí</a>
+              </li>
+              <li>
+                <a href="#">Proyectos</a>
+              </li>
+              <li>
+                <a href="#">Contactame</a>
+              </li>
+            </ul>
+          </span>
         </div>
-      </div>
+      </header>
+      <main>
+        <div>
+          <h1>
+            <Image
+              src="/website/hero.png"
+              alt="hero"
+              width={100}
+              height={100}
+            />
+            <span>Cheree</span>
+          </h1>
+          <h2>Desarrollador full stack</h2>
+          <p>
+            Soy un desarrollador, apasionado por la tecnología y la
+            programación, me gusta aprender cosas nuevas y compartir lo que
+            aprendo con los demás.
+          </p>
+          <div>
+            <a href="#">Ver mi CV</a>
+          </div>
+        </div>
+      </main>
     </div>
-  )
+  );
 }
