@@ -1,7 +1,5 @@
-import { Inter } from "next/font/google";
 import Image from "next/image";
 
-const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Portfolio | Aún en construcción",
   description: "Chere3",
