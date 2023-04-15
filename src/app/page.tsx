@@ -34,21 +34,23 @@ export default function Home() {
       <main>
         <div>
           <h1>
+            <Image
+              src="/website/hero.png"
+              alt="hero"
+              width={100}
+              height={100}
+            />
             <span>Cheree</span>
-            <span>3</span>
           </h1>
-          <h2>Desarrollador web</h2>
+          <h2>Desarrollador full stack</h2>
           <p>
             Soy un desarrollador, apasionado por la tecnología y la
             programación, me gusta aprender cosas nuevas y compartir lo que
             aprendo con los demás.
           </p>
           <div>
-            <a href="#">Ver mi portafolio</a>
+            <a href="#">Ver mi CV</a>
           </div>
-        </div>
-        <div>
-          <Image src="/website/hero.png" alt="hero" width={100} height={100} />
         </div>
       </main>
     </div>
